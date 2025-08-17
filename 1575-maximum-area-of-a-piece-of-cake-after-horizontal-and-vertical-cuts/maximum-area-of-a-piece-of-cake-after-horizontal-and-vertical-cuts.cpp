@@ -13,7 +13,7 @@ public:
         }
         if(hmax < h-horizontalCuts[horizontalCuts.size()-1]) hmax = h-(horizontalCuts[horizontalCuts.size()-1]);
         if(vmax < w-verticalCuts[verticalCuts.size()-1]) vmax = w-(verticalCuts[verticalCuts.size()-1]);
-        long long int ans = ((long long int)((hmax%1000000007))*((long long int)(vmax%1000000007))) % 1000000007;
+        long long int ans = ((long long int)((hmax))*((long long int)(vmax))) % 1000000007;
         return ans % 1000000007;
     }
 };
