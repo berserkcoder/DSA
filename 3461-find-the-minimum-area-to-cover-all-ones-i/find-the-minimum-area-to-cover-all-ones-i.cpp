@@ -27,7 +27,7 @@ public:
             }
         }
         int col = end-start+1;
-        cout << row << " " << col << endl;
+        // cout << row << " " << col << endl;
         return row*col;
     }
 };
