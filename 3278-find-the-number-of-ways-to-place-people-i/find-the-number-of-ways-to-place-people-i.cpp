@@ -19,7 +19,6 @@ public:
             int position = points[i][1];
             range = {position-1,51};
             for(int j = i+1;j<points.size();j++){
-                cout << range.first << range.second << points[j][1] << endl;
                 if(points[j][1] > range.first && points[j][1] < range.second){
                     ans++;
                     if(position < points[j][1]) range.second = points[j][1];
