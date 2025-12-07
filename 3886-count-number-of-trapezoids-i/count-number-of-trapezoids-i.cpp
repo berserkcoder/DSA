@@ -22,7 +22,7 @@ public:
             prefix[i] = sum;
         }
         for(int i = 0;i<imp.size()-1;i++){
-            ans += (long long int)((long long int)imp[i] * (long long int)prefix[i+1]) % 1000000007;
+            ans += (imp[i] * prefix[i+1]) % 1000000007;
         }
         return ans % 1000000007;
     }
