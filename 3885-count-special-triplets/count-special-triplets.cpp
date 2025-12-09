@@ -10,7 +10,7 @@ public:
         }
         for(int i = 0;i<nums.size();i++){
             right[nums[i]]--;
-            long target = 2LL * nums[i];
+            long target = 2 * nums[i];
             if(left.count(target) && right.count(target) && right[target] > 0){
                 ans = (ans + (left[target] * right[target]) % mod) % mod;
             }
