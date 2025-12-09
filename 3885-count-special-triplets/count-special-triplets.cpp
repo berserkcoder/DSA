@@ -11,7 +11,10 @@ public:
         for(int i = 0;i<nums.size();i++){
             right[nums[i]]--;
             long target = 2 * nums[i];
-            if(left.count(target) && right.count(target) && right[target] > 0){
+            // if(left.count(target) && right.count(target) && right[target] > 0){
+            //     ans = (ans + (left[target] * right[target]) % mod) % mod;
+            // }
+            if(left.find(nums[i]*2) != left.end() && right.find(nums[i]*2) != right.end()){
                 ans = (ans + (left[target] * right[target]) % mod) % mod;
             }
             left[nums[i]]++;
