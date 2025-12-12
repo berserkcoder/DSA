@@ -8,7 +8,6 @@ public:
         for(int i = 0;i<nums.size();i++){
             if(nums[i] < 0) sum = (sum + k+(nums[i]%k)) % k;
             else sum = (sum + nums[i]%k) % k;
-            // if(sum == 0) ans++;
             ans += mpp[sum];
             mpp[sum]++;
         }
