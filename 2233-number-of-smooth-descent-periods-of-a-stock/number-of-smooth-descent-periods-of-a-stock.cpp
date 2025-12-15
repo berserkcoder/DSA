@@ -6,8 +6,6 @@ public:
         for(int i = 0;i<prices.size()-1;i++){
             if(prices[i] != prices[i+1]+1){
                 ans = ans + (count * (count+1))/2;
-                cout << ans << " ";
-                cout << count << " ";
                 count = 1;
             }else {
                 count++;
