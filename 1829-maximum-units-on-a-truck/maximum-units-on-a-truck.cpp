@@ -12,7 +12,6 @@ public:
             }
             ans += boxTypes[i][0] * boxTypes[i][1];
             truckSize = truckSize - boxTypes[i][0];
-            cout << truckSize << " ";
         }
         return ans;
     }
