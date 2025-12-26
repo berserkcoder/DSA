@@ -15,13 +15,11 @@ public:
         }
         int minPenalty = yes[0];
         int ans = 0;
-        cout << minPenalty << " ";
         for(int i = 0;i<customers.size()-1;i++){
             if(no[i] + yes[i+1] < minPenalty) {
                 minPenalty = no[i] + yes[i+1];
                 ans = i+1;
             }
-            cout << minPenalty << " ";
         }
         if(no[customers.size()-1] < minPenalty) ans = customers.size();
         return ans;
