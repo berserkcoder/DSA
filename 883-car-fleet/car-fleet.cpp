@@ -12,21 +12,8 @@ public:
             while(!st.empty() && st.top()[1] > store[i][1] && st.top()[2] <= store[i][2]){
                 st.pop();
             }
-            // cout << store[i][0] << " " << store[i][1] << " " << store[i][2] << endl;
             st.push({store[i][0],store[i][1],store[i][2]});
         }
-        // cout << endl;
-        int ans = st.size();
-        while(!st.empty()){
-            // cout << st.top()[0] << " " << st.top()[1] << " " << st.top()[2] << endl;
-            st.pop();
-        }
-        return ans;
-    }
-    int time(double t,double p,double s){
-        double tt = (t-p)/s;
-        int itt = tt;
-        if(tt > itt) return itt+1;
-        return itt;
+        return st.size();
     }
 };
