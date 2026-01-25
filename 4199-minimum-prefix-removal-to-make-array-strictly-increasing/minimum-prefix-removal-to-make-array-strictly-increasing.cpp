@@ -8,7 +8,6 @@ public:
                 break;
             }
         }
-        // if(index == -1) return 0;
         return index;
     }
 };
