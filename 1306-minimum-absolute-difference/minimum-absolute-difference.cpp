@@ -9,10 +9,10 @@ public:
         }
         for(int i = 0;i<arr.size()-1;i++){
             if(arr[i+1]-arr[i] == minDiff) {
-                vector<int> store(2);
-                store[0] = arr[i];
-                store[1] = arr[i+1];
-                ans.push_back(store);
+                // vector<int> store(2);
+                // store[0] = arr[i];
+                // store[1] = arr[i+1];
+                ans.push_back({arr[i],arr[i+1]});
             }
         }
         return ans;
