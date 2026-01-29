@@ -16,13 +16,13 @@ public:
                 int cost = pq.top()[0];
                 int alphabet = pq.top()[1];
                 pq.pop();
-                // if(vis[alphabet] == 1) continue;
+                if(vis[alphabet] == 1) continue;
                 vis[alphabet] = 1;
                 for(auto it : graph[alphabet]){
                     if(hash[i][it[0]] > cost + it[1]){
                         hash[i][it[0]] = cost + it[1];
                         pq.push({cost+it[1],it[0]});
-                        vis[it[0]] = 1;
+                        // vis[it[0]] = 1;
                     }
                 }
             }
