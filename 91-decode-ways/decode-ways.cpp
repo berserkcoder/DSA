@@ -15,7 +15,6 @@ public:
             else if(s[i-2] == '2' && s[i-1] < '7') dp[i] = dp[i-1] + dp[i-2];
             else dp[i] = dp[i-1];
         }
-        for(int i = 1;i<=n;i++) cout << dp[i] << " ";
         return dp[n];
     }
 };
