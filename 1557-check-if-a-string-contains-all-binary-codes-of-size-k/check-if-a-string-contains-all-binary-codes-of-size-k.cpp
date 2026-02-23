@@ -11,12 +11,4 @@ public:
         }
         return store.size() == pow(2,k);
     }
-    void rec(int k,string temp,map<string,int>& store){
-        if(k == 0){
-            store[temp]++;
-            return;
-        }
-        rec(k-1,temp + "0",store);
-        rec(k-1,temp + "1",store);
-    }
 };
