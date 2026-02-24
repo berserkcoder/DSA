@@ -28,7 +28,6 @@ public:
                 }
                 val = val*2;
             }
-            cout << s << endl;
             sum += num;
             return;
         }
