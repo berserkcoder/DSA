@@ -8,9 +8,7 @@ public:
             while(i >= pow(2,val)){
                 val++;
             }
-            // cout << val << " ";
             ans = (ans << val) % mod;
-            // cout << ans << " ";
             ans = (ans + i) % mod;
         }
         return ans;
