@@ -13,11 +13,10 @@ public:
         int x = 0;
         if(l == 0) x = prefix[r];
         else x = prefix[r] - prefix[l-1];
+        if(x == 0) return cost2;
         if((r-l+1) % 2 == 1){
-            if(x == 0) return cost2;
             return (r-l+1) * cost1 * x;
         }
-        if(x == 0) return cost2;
         return min((r-l+1) * cost1 * x, check(l,(l+r)/2,cost1,cost2,prefix) + check((l+r)/2+1,r,cost1,cost2,prefix));
     }
 };
