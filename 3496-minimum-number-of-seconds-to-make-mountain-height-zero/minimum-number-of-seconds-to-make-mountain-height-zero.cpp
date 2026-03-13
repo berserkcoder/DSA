@@ -23,7 +23,6 @@ public:
             long long days = pq.top()[2];
             long long current = pq.top()[0];
             pq.pop();
-            cout << current << " " << val << " " << days << endl;
             if(days != 1)ans = max(ans,current-(val*days));
             store -= days-1;
         }
