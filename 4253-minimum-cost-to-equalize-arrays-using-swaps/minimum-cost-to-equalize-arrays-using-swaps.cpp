@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minCost(vector<int>& nums1, vector<int>& nums2) {
-        map<int,int> store;
+        unordered_map<int,int> store;
         int n = nums1.size();
         for(int i = 0;i<n;i++){
             store[nums1[i]]++;
