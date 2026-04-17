@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minMirrorPairDistance(vector<int>& nums) {
-        map<int,int> mpp;
+        unordered_map<int,int> mpp;
         int ans = INT_MAX;
         for(int i = 0;i<nums.size();i++){
             int rev = 0;
