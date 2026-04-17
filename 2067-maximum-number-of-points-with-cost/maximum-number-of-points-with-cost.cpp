@@ -29,12 +29,12 @@ public:
                 dp[i][j] = maxi + (long long)points[i][j];
             }
         }
-        for(int i = n-1;i>=0;i--){
-            for(int j = m-1;j>=0;j--){
-                cout << points[i][j] << " ";
-            }
-            cout << endl;
-        }
+        // for(int i = n-1;i>=0;i--){
+        //     for(int j = m-1;j>=0;j--){
+        //         cout << points[i][j] << " ";
+        //     }
+        //     cout << endl;
+        // }
         long long ans = INT_MIN;
         for(int i = 0;i<m;i++){
             ans = max(ans,dp[n-1][i]);
