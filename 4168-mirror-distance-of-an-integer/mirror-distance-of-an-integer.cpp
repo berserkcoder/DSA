@@ -1,13 +1,13 @@
 class Solution {
 public:
     int mirrorDistance(int n) {
-        int val = n;
         int rev = 0;
-        while(val!=0){
+        int val = n;
+        while(val != 0){
             int digit = val % 10;
-            rev = rev * 10 + digit;
             val = val/10;
+            rev = rev * 10 + digit;
         }
-        return abs(rev-n);
+        return abs(n - rev);
     }
 };
