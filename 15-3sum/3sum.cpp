@@ -15,7 +15,7 @@ public:
                 if(sum == val){
                     store.push_back(nums[l]);
                     store.push_back(nums[h]);
-                    sort(store.begin(),store.end());
+                    // sort(store.begin(),store.end());
                     st.insert(store);
                     store.pop_back();
                     store.pop_back();
